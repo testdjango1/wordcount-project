@@ -1,0 +1,8 @@
+<h1>thare are {{ count }} words in your list</h1>
+<h1>your text</h1>
+<a href = "{% url 'home' %}">again</a>
+<a href = "{% url 'about' %}">abpout</a>
+{{ fulltext }}
+{% for word,count in worddict%}
+    <h1>{{ word }} --> {{ count }}</h1>
+{% endfor %}
